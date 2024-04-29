@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_pos_order_form_inherit" model="ir.ui.view">
+            <field name="name">pos.order.form.inherit</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="invoice_reference" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_pos_order_tree_inherit" model="ir.ui.view">
+            <field name="name">pos.order.tree.inherit</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="invoice_reference"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_pos_order_filter_invoice_reference" model="ir.ui.view">
+            <field name="name">pos.order.list.search</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_order_filter"/>
+            <field name="arch" type="xml">
+                <search position="inside">
+                    <field name="invoice_reference"/>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="invoiceReference.PaymentScreenButtons" t-inherit="point_of_sale.PaymentScreenButtons"
+       t-inherit-mode="extension">
+        <xpath expr="//div[1]" position="after">
+              <div class=" d-flex flex-column flex-wrap">
+                        <textarea class="form-control" placeholder="Invoice Reference..."
+                                  id="invoiceReference"
+                                  style="background: white; border: 2px solid green;"
+                                  rows="4"
+                                  t-att-value="state.invoice_reference"
+                                  t-on-change="invoiceReference"/>
+              </div>
+        </xpath>
+    </t>
+</templates>
