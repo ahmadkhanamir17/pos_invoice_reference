@@ -17,7 +17,7 @@
         This feature simplifies order tracking and search in the backend, making it easier for staff to locate relevant orders.
      """,
 
-    'author': 'Code Craft System',
+    'author': 'Ahmad Khan',
     'company': 'codecraftsystem@gmail.com',
     'maintainer': 'codecraftsystem@gmail.com',
     'category': 'Point of Sale',
