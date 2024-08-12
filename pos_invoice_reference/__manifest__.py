@@ -44,7 +44,5 @@
     "installable": True,
     "auto_install": False,
     'live_test_url': 'https://youtu.be/RdsbeDMhBkI',
-    'license': 'OPL-1',
-    'price': 9.99,
-    'currency': 'USD',
+    'license': 'LGPL-3',
 }
